@@ -1,0 +1,191 @@
+Federal Register :: Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2025; Revised (https://www.federalregister.gov/d/2025-05345)
+citeturn114view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn113view0","lineno":150}); Redirected to URL: https://www.federalregister.gov/documents/2025/03/28/2025-05345/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room; Total lines: 256
+L0: cite0†Skip to Content L1:   *   *     *     * cite1†Home L2:     * Sections
+L3:       * cite2†Money L4:       * cite3†Environment L5:       * cite4†World L6:       * cite5†Science & Technology L7:       * cite6†Business & Industry L8:       * cite7†Health & Public Welfare L9:     * Browse
+L10:       * cite8†Agencies L11:       * cite9†Topics (CFR Indexing Terms) L12:       * cite10†Dates L13:       * cite11†Public Inspection L14:       * cite12†Presidential Documents L15:     * Search
+L16:       * cite13†Document Search L17:       * cite14†Advanced Document Search L18:       * cite15†Public Inspection Search L19:       * cite16†FR Index L20:     * Reader Aids
+L21:       * cite17†Reader Aids Home L22:       * cite18†Office of the Federal Register Announcements L23:       * cite19†Using FederalRegister.Gov L24:       * cite20†Understanding the Federal Register L25:       * cite21†Recent Site Updates L26:       * cite22†Federal Register & CFR Statistics L27:       * cite23†Videos & Tutorials L28:       * cite24†Developer Resources L29:       * cite25†Government Policy and OFR Procedures L30:     * My FR
+L31:       * cite26†My Account L32:       * cite27†My Clipboard L33:       * cite28†My Comments L34:       * cite29†My Subscriptions L35:       * cite30†Sign In / Sign Up L36:     * cite31†Site Feedback L37:   * Search the Federal Register [Input: Search Documents]
+L38: Legal Status
+L39: 
+L40: This site displays a prototype of a “Web 2.0” version of the daily Federal Register. It is not an official legal edition of the Federal Register, and does not replace the official print version or the official electronic version on GPO’s govinfo.gov.
+L41: The documents posted on this site are XML renditions of published Federal Register documents. Each document posted on the site includes a link to the corresponding official PDF file on govinfo.gov. This prototype edition of the daily Federal Register on FederalRegister.gov will remain an unofficial informational resource until the Administrative Committee of the Federal Register (ACFR) issues a regulation granting it official legal status.
+L42: For complete information about, and access to, our official publications and services, go to cite32†About the Federal Register†www.archives.gov on NARA's archives.gov.
+L43: The OFR/GPO partnership is committed to presenting accurate and reliable regulatory information on FederalRegister.gov with the objective of establishing the XML-based Federal Register as an ACFR-sanctioned publication in the future.
+L44: While every effort has been made to ensure that the material on FederalRegister.gov is accurately displayed, consistent with the official SGML-based PDF version on govinfo.gov, those relying on it for legal research should verify their results against an official edition of the Federal Register. Until the ACFR grants it official status, the XML rendition of the daily Federal Register on FederalRegister.gov does not provide legal notice to the public or judicial notice to the courts.
+L45: Legal Status
+L46: # Notice
+L47: 
+L48: Enter a search term or FR citation e.g. 88 FR 382 30 FR 7878 2024-13208 USDA 09/05/24 RULE 0503-AA39 SORN
+L49: 
+L50: Choosing an item from full text search results will bring you to those results. Pressing enter in the search box will also bring you to search results. Choosing an item from suggestions will bring you directly to the content.
+L51: 
+L52: Background and more details are available in the cite33†Search & Navigation guide.
+L53: 
+L54: [Input: Enter a search term or FR reference (eg 88 FR 382)]
+L55: # Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2025; Revised
+L56: 
+L57: A Notice by the cite34†Housing and Urban Development Department on cite35†03/28/2025 L58: 
+L59:   *     1. [Input]
+L60: 
+L61: Published Document: 2025-05345 (90 FR 14158)
+L62: 
+L63: This document has been published in the Federal Register. Use the PDF linked in the document sidebar for the official electronic format.
+L64: 
+L65: Published Document: 2025-05345 (90 FR 14158)
+L66:   * Document Details
+L67: 
+L68:   *   * PDF
+L69:   * Document Details
+L70:   * Document Dates
+L71:   * Table of Contents
+L72:   *   * Public Comments
+L73:   * Regulations.gov Data
+L74:   * Sharing
+L75:   *   * Print
+L76:   * Document Statistics
+L77:   * Other Formats
+L78:   * Public Inspection
+L79: 
+L80: Published Document: 2025-05345 (90 FR 14158)
+L81: 
+L82: This document has been published in the Federal Register. Use the PDF linked in the document sidebar for the official electronic format.
+L83: 
+L84: Document Headings
+L85: 
+L86: Document headings vary by document type but may contain the following:
+L87:   1. the agency or agencies that issued and signed a document
+L88:   2. the number of the CFR title and the number of each part the document amends, proposes to amend, or is directly related to
+L89:   3. the agency docket number / agency internal file number
+L90:   4. the RIN which identifies each regulatory action listed in the Unified Agenda of Federal Regulatory and Deregulatory Actions
+L91: 
+L92: See the cite36†Document Drafting Handbook†www.archives.gov for more details.
+L93: ###### Department of Housing and Urban Development
+L94: 
+L95:   1. [Docket No. FR-6479-N-02]
+L96: 
+L97: # AGENCY:
+L98: 
+L99: Office of the Assistant Secretary for Policy Development and Research, Department of Housing and Urban Development, HUD.
+L100: 
+L101: # ACTION:
+L102: 
+L103: Notice of revised fiscal year (FY) 2025 Fair Market Rents (FMRs).
+L104: 
+L105: # SUMMARY:
+L106: 
+L107: This notice updates the FY 2025 FMRs for several areas based on new survey data.
+L108: 
+L109: # DATES:
+L110: 
+L111: The revised FY 2025 FMRs are effective on April 28, 2025.
+L112: # FOR FURTHER INFORMATION CONTACT:
+L113: Adam Bibler, telephone 202-402-6057. Questions related to the use of FMRs or voucher payment standards should be directed to the respective local HUD program staff.
+L114: For technical information on the methodology used to develop FMRs or a listing of all FMRs, please call the HUD USER information line at 800-245-2691 (toll-free), email the Program Parameters and Research Division at pprd@hud.gov, or access the information on the HUD USER website: cite37†http://www.huduser.gov/​portal/​datasets/​fmr.html†www.huduser.gov .
+L115: HUD welcomes and is prepared to receive calls from individuals who are deaf or hard of hearing, as well as individuals with speech or communication disabilities. To learn more about how to make an accessible telephone call, please visit cite38†https://www.fcc.gov/​consumers/​guides/​telecommunications-relay-service-trs†www.fcc.gov .
+L116: # SUPPLEMENTARY INFORMATION:
+L117: 
+L118: On August 14, 2024, HUD published in the Federal Register the FY 2025 FMRs, requested comments on the FY 2025 FMRs, and outlined procedures for requesting a reevaluation of an area's FY 2025 FMRs, available at cite39†89 FR 66127 . This notice revises FY 2025 FMRs for several areas based on data provided to HUD.
+L119: ## I. Revised FY 2025 FMRs
+L120: 
+L121: The updated FY 2025 FMRs appear in the following table. The FMRs are based on surveys conducted by the area public housing agencies (PHAs) and reflect the estimated 40th percentile rent levels trended to FY 2025.
+L122: 
+L123: The FMRs for the affected areas are revised as follows:
+L124: 2025 Fair Market Rent area  | 0 BR  | 1 BR  | 2 BR  | 3 BR  | 4 BR
+L125: --- | --- | --- | --- | --- | ---
+L126: San Luis Obispo-Paso Robles-Arroyo Grande, CA MSA  | $1,669  | $1,855  | $2,434  | $3,250  | $3,683
+L127: Santa Maria-Santa Barbara, CA MSA  | 2,381  | 2,688  | 3,028  | 4,011  | 4,468
+L128: Santa Rosa, CA MSA  | 1,879  | 2,089  | 2,740  | 3,743  | 3,960
+L129: Boston-Cambridge-Quincy, MA-NH HUD Metro FMR Area  | 2,263  | 2,394  | 2,837  | 3,418  | 3,761
+L130: Beaverhead County, MT  | 762  | 937  | 1,038  | 1,454  | 1,743
+L131: Big Horn County, MT  | 926  | 962  | 1,262  | 1,610  | 1,862
+L132: Billings, MT HUD Metro FMR Area  | 1,013  | 1,062  | 1,373  | 1,888  | 2,124
+L133: Blaine County, MT  | 841  | 874  | 1,147  | 1,382  | 1,830
+L134: Broadwater County, MT  | 1,243  | 1,426  | 1,694  | 2,041  | 2,703
+L135: Carter County, MT  | 884  | 991  | 1,205  | 1,452  | 1,922
+L136: Chouteau County, MT  | 929  | 965  | 1,266  | 1,536  | 1,899
+L137: Custer County, MT  | 1,068  | 1,188  | 1,558  | 2,140  | 2,148
+L138: Daniels County, MT  | 728  | 762  | 992  | 1,356  | 1,583
+L139: Dawson County, MT  | 891  | 934  | 1,215  | 1,464  | 1,827
+L140: Deer Lodge County, MT  | 768  | 946  | 1,047  | 1,467  | 1,729
+L141: Fallon County, MT  | 996  | 1,044  | 1,358  | 1,856  | 2,167
+L142: Fergus County, MT  | 1,029  | 1,069  | 1,402  | 1,840  | 2,237
+L143: Flathead County, MT  | 1,202  | 1,249  | 1,639  | 2,184  | 2,752
+L144: Gallatin County, MT  | 1,448  | 1,626  | 2,087  | 2,924  | 3,453
+L145: Garfield County, MT  | 781  | 818  | 1,065  | 1,286  | 1,699
+L146: Glacier County, MT  | 950  | 1,051  | 1,236  | 1,529  | 1,915
+L147: Golden Valley County, MT  | 952  | 989  | 1,298  | 1,786  | 2,071
+L148: Granite County, MT  | 748  | 827  | 1,020  | 1,429  | 1,627
+L149: Great Falls, MT MSA  | 903  | 948  | 1,244  | 1,743  | 1,977
+L150: Hill County, MT  | 929  | 1,003  | 1,266  | 1,672  | 1,678
+L151: Jefferson County, MT  | 933  | 1,037  | 1,361  | 1,907  | 2,171
+L152: Judith Basin County, MT  | 825  | 864  | 1,124  | 1,383  | 1,793
+L153: Lake County, MT  | 1,055  | 1,077  | 1,400  | 1,766  | 1,856
+L154: Lewis and Clark County, MT  | 1,094  | 1,259  | 1,596  | 2,106  | 2,397
+L155: Liberty County, MT  | 735  | 770  | 1,002  | 1,404  | 1,599
+L156: ( printed page 14159)
+L157: Lincoln County, MT  | 832  | 1,024  | 1,134  | 1,589  | 1,904
+L158: Madison County, MT  | 1,139  | 1,147  | 1,492  | 1,798  | 2,505
+L159: McCone County, MT  | 1,100  | 1,153  | 1,500  | 2,050  | 2,393
+L160: Meagher County, MT  | 990  | 1,037  | 1,350  | 1,845  | 2,154
+L161: Mineral County, MT  | 968  | 1,043  | 1,319  | 1,589  | 1,919
+L162: Missoula, MT MSA  | 1,121  | 1,339  | 1,604  | 2,248  | 2,694
+L163: Musselshell County, MT  | 956  | 1,011  | 1,303  | 1,826  | 2,188
+L164: Park County, MT  | 1,066  | 1,306  | 1,555  | 2,162  | 2,611
+L165: Petroleum County, MT  | 1,100  | 1,153  | 1,500  | 2,050  | 2,393
+L166: Phillips County, MT  | 691  | 851  | 942  | 1,320  | 1,503
+L167: Pondera County, MT  | 891  | 1,097  | 1,215  | 1,549  | 1,904
+L168: Powder River County, MT  | 729  | 764  | 994  | 1,393  | 1,586
+L169: Powell County, MT  | 806  | 844  | 1,098  | 1,539  | 1,752
+L170: Prairie County, MT  | 1,100  | 1,153  | 1,500  | 2,050  | 2,393
+L171: Ravalli County, MT  | 1,090  | 1,098  | 1,379  | 1,932  | 2,316
+L172: Richland County, MT  | 932  | 1,148  | 1,271  | 1,531  | 2,134
+L173: Roosevelt County, MT  | 848  | 887  | 1,164  | 1,402  | 1,857
+L174: Rosebud County, MT  | 843  | 947  | 1,149  | 1,570  | 1,929
+L175: Sanders County, MT  | 821  | 884  | 1,080  | 1,386  | 1,814
+L176: Sheridan County, MT  | 861  | 972  | 1,174  | 1,637  | 1,643
+L177: Silver Bow County, MT  | 945  | 1,077  | 1,370  | 1,920  | 2,191
+L178: Stillwater County, MT HUD Metro FMR Area  | 877  | 928  | 1,218  | 1,705  | 2,045
+L179: Sweet Grass County, MT  | 836  | 902  | 1,140  | 1,597  | 1,819
+L180: Teton County, MT  | 967  | 1,190  | 1,318  | 1,746  | 1,975
+L181: Toole County, MT  | 875  | 1,013  | 1,192  | 1,670  | 1,902
+L182: Treasure County, MT  | 1,100  | 1,153  | 1,500  | 2,050  | 2,393
+L183: Valley County, MT  | 853  | 886  | 1,163  | 1,479  | 1,747
+L184: Wheatland County, MT  | 794  | 832  | 1,082  | 1,408  | 1,726
+L185: Wibaux County, MT  | 1,100  | 1,153  | 1,500  | 2,050  | 2,393
+L186: New York, NY HUD Metro FMR Area  | 2,406  | 2,511  | 2,780  | 3,465  | 3,738
+L187: HUD has published these revised FMR values on the HUD USER website at: cite37†http://www.huduser.gov/​portal/​datasets/​fmr.html†www.huduser.gov . In addition, HUD has updated the FY 2025 Small Area FMRs (SAFMRs) for metropolitan areas with revised FMRs, which can be found at cite40†https://www.huduser.gov/​portal/​datasets/​fmr/​smallarea/​index.html†www.huduser.gov .
+L188: HUD has also updated the 50th percentile rents for all affected FMR areas, which are published at cite41†http://www.huduser.gov/​portal/​datasets/​50per.html†www.huduser.gov .
+L189: ## II. Environmental Impact
+L190: 
+L191: This notice involves the establishment of Fair Market Rent schedules and does not constitute a development decision affecting the physical condition of specific project areas or building sites. Accordingly, under cite42†24 CFR 50.19(c)(6)†www.ecfr.gov , this notice is categorically excluded from environmental review under the National Environmental Policy Act of 1969 (cite43†42 U.S.C. 4321†www.govinfo.gov ).
+L192: 
+L193: John Gibbs,
+L194: Principal Deputy Assistant Secretary for Policy Development and Research.
+L195: 
+L196: [cite44†FR Doc. 2025-05345 Filed 3-27-25; 8:45 am]
+L197: 
+L198: BILLING CODE 4210-67-P
+L199: 
+L200: Published Document: 2025-05345 (90 FR 14158)
+L201: ## Home
+L202: 
+L203:   * cite1†Home L204: 
+L205: ## Sections
+L206: 
+L207:   * cite2†Money L208:   * cite3†Environment L209:   * cite4†World L210:   * cite5†Science & Technology L211:   * cite6†Business & Industry L212:   * cite7†Health & Public Welfare L213: 
+L214: ## Browse
+L215: 
+L216:   * cite8†Agencies L217:   * cite9†Topics (CFR Indexing Terms) L218:   * cite10†Dates L219:   * cite11†Public Inspection L220:   * cite45†Executive Orders L221: 
+L222: ## Search
+L223: 
+L224:   * cite13†Document Search L225:   * cite14†Advanced Document Search L226:   * cite15†Public Inspection Search L227: ## Reader Aids
+L228: 
+L229:   * cite18†Office of the Federal Register Announcements L230:   * cite19†Using FederalRegister.Gov L231:   * cite20†Understanding the Federal Register L232:   * cite21†Recent Site Updates L233:   * cite22†Federal Register & CFR Statistics L234:   * cite23†Videos & Tutorials L235:   * cite24†Developer Resources L236:   * cite25†Government Policy and OFR Procedures L237: 
+L238: ## My FR
+L239: 
+L240:   * cite46†My Clipboard L241:   * cite29†My Subscriptions L242:   * cite28†My Comments L243:   * cite47†Sign In L244: ## Information
+L245: 
+L246:   * cite48†About This Site L247:   * cite49†Legal Status L248:   * cite50†Contact Us L249:   * cite51†Privacy L250:   * cite52†Accessibility L251:   * cite53†FOIA L252:   * cite54†No Fear Act†www.archives.gov L253:   * cite55†Continuity Information†www.archives.gov L254: 
+L255: Site Feedback
+
