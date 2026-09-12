@@ -1,6 +1,14 @@
-# Physician Pay — version 4
+# Physician Pay | version 4
 
 A static, browser-only physician income and purchasing-power comparison for Canada and the United States. No backend, account, tracker, paid API or server subscription is required. The research snapshot was reviewed on 9 September 2026.
+
+## Clarity update · 12 September 2026
+
+The page now explains the salary-comparison purpose before the calculator. It leads with starting income, deductions and estimated personal take-home, followed by optional spending-power calculations. The location explorer explains national versus local pay coverage. Household budgets, debt, projections, detailed assumptions and source tables sit in expandable sections; navigation links reveal the relevant section automatically.
+
+A visible incorporation explanation distinguishes unincorporated estimates from independently calculated personal take-home and funds retained in a corporation. U.S. national compensation and state wages keep distinct labels in the deduction breakdown. Income, tax, price and planning engines remain unchanged.
+
+Validation: all four calculation suites passed. Browser checks covered annual/monthly results, known take-home, required tax inputs, national-versus-state pay selection, explorer loading, expanded-section links and desktop/mobile layouts. Generated HTML and ZIP were rebuilt from the edited source.
 
 ## Added in version 4
 
@@ -73,11 +81,11 @@ The embedded data preserve 190 Canadian province/specialty cells, 867 U.S. state
 
 Open `dist/index.html` directly, or serve `dist/` with any static host. No build step or package installation is needed. The separate `Physician-Pay.html` delivery embeds all assets for offline use.
 
-Run `node tests.cjs`, `node tests-model.cjs` , `node tests-benchmarks.cjs` and `node tests-planner.cjs` from the project root. These cover reference tax cases, accounting identities, all geographic price options, cross-border currency consistency, direct-net behavior, expense treatment, overrides, CMPA examples and invalid inputs. Added tests check eight new state models, tax thresholds, loan and mortgage payments, debt-payoff cash release, projections, break-even solving and housing coverage. Static JavaScript/asset checks also pass. Browser/visual QA was not performed in this session.
+Run `node tests.cjs`, `node tests-model.cjs` , `node tests-benchmarks.cjs` and `node tests-planner.cjs` from the project root. These cover reference tax cases, accounting identities, all geographic price options, cross-border currency consistency, direct-net behavior, expense treatment, overrides, CMPA examples and invalid inputs. Added tests check eight new state models, tax thresholds, loan and mortgage payments, debt-payoff cash release, projections, break-even solving and housing coverage. Static JavaScript/asset checks also pass. Browser/visual QA was not performed for the original version 4 package; see the clarity-update checks above.
 
 `research/anchors.json` includes the reproducible calibration inputs, published fee groups and their source links. `python research/build-model.py` recreates `dist/model-data.js`. The embedded `dist/data.js` is the complete frozen pay/tax/price snapshot; the original salary-data extraction pipeline is not required to run or publish the site.
 
-See `PUBLISH.md` for one-file GitHub Pages upload instructions. The top-level `index.html` in the ZIP is standalone and ready to upload. This version is delivered for manual upload; no repository changes or deployment were attempted in this update.
+See `PUBLISH.md` for one-file GitHub Pages upload instructions. The top-level `index.html` in the ZIP is standalone and ready to upload. The root standalone HTML is the GitHub Pages entry point. Deploying changes requires publishing the reviewed branch to the configured Pages source.
 
 ## Rebuild the download
 

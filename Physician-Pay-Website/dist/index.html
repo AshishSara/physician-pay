@@ -1,16 +1,74 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Physician Pay — What Your Income Can Buy</title><meta name="description" content="Compare physician take-home and modeled local purchasing power in every Canadian province and U.S. state, with transparent taxes, insurance, expenses and source data."><link rel="stylesheet" href="./style.css"></head>
-<body><noscript><p>This calculator needs JavaScript. Open the downloaded HTML in your web browser, or use the published website.</p></noscript><a class="skip" href="#comparison">Skip to comparison</a><header><a href="#" class="brand">Physician Pay</a><nav aria-label="Main"><a href="#quick-controls">Your numbers</a><a href="#life-planner">Your lifestyle</a><a href="#location-explorer">All locations</a><a href="#evidence">Pay evidence</a><a href="#method">Method & sources</a></nav></header>
-<main><div class="intro"><h1>Compare physician pay</h1><p>Choose specialty and location. Published medians load automatically; taxes, expenses and purchasing power follow.</p></div>
-<div class="toolbar"><div class="presets" aria-label="Comparison examples"><button data-preset="median">Median benchmarks</button><button data-preset="cross">BC CA$208k vs Oklahoma US$316k take-home</button><button data-preset="nyok">NYC vs Oklahoma · US$500k salary</button><button data-preset="derm">Alberta vs Ontario · dermatology</button></div><div class="utilities"><button id="swap">Swap A / B</button><button id="export">Save comparison</button><button id="print-comparison">Print / save PDF</button><label class="file-label">Load comparison<input id="import" type="file" accept=".json,application/json"></label></div><span id="file-status" role="status"></span></div>
-<div id="quick-controls" class="quick-controls" aria-label="Choose two locations and income amounts"></div>
-<section id="comparison" class="comparison" aria-live="polite"></section>
-<section id="life-planner"><div class="section-head"><div><h2>What your life could cost</h2><p>Build a monthly budget, repay debt, and see what remains. All amounts here are actual local currency.</p></div><span class="vintage">Editable planning assumptions<br>Housing sources shown beside inputs</span></div><div id="planner-inputs" class="scenarios"></div><div id="planner-results" aria-live="polite"></div><div id="cash-exchange"></div></section>
-<section id="decision-lab"><h2>What would change the decision?</h2><div id="decision-results"></div></section>
-<section id="location-explorer"><div class="section-head"><div><h2>Explore a specialty across locations</h2><p>Inspect every province or state. National pay benchmarks remain national wherever they are used.</p></div></div><div id="explorer-controls"></div><div id="explorer-table"></div></section>
-<div class="section-head"><div><h2>Expense and tax details</h2><p class="hint">Median mode refreshes income when specialty or location changes. Custom mode keeps your entered amount. Review the expense and tax assumptions for each scenario.</p></div><span class="vintage">2025 tax rules · 2024 prices<br>Historical pay evidence</span></div>
-<div id="scenarios" class="scenarios"></div>
-<section id="evidence"><div class="section-head"><div><h2>Specialty pay evidence</h2></div><select id="evidence-country" aria-label="Evidence country"><option value="CA">Canada · gross clinical medians</option><option value="US">U.S. · state wage medians</option><option value="AMGA">U.S. · medical-group medians</option></select></div><p id="evidence-note"></p><div class="filters"><label>Location<select id="evidence-place"></select></label><label>Specialty<input id="evidence-search" type="search" placeholder="Find a specialty"></label></div><div class="table-wrap"><table><thead id="evidence-head"></thead><tbody id="evidence-body"></tbody></table></div></section>
-<section id="method"><h2>How everything is calculated</h2><div id="method-content"></div></section>
-<p class="closing-note">All calculations run in your browser. No account, trackers, paid API or server required. Inputs stay on your device unless you choose to export them. This is a planning model with visible assumptions, not a guaranteed income or a personalized tax return.</p></main>
-<script src="./data.js"></script><script src="./model-data.js"></script><script src="./layers-data.js"></script><script src="./engine.js"></script><script src="./benchmarks.js"></script><script src="./planner.js"></script><script src="./layers-ui.js"></script><script src="./app.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Physician Pay | Compare income across Canada and the U.S.</title>
+  <meta name="description" content="Explore physician pay by specialty and location in Canada and the U.S. Compare published income benchmarks, estimated take-home and local living costs, with clear assumptions about overhead and incorporation.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<noscript><p>This calculator needs JavaScript. Open the downloaded HTML in your web browser, or use the published website.</p></noscript>
+<a class="skip" href="#quick-controls">Skip to income inputs</a>
+<header>
+  <a href="#" class="brand">Physician Pay<span>CANADA + UNITED STATES</span></a>
+  <nav aria-label="Main"><a href="#quick-controls">Compare two places</a><a href="#location-explorer">Browse locations</a><a href="#income-guide">Understand the numbers</a><a href="#evidence">Sources</a></nav>
+</header>
+<main>
+  <div class="intro">
+    <p class="eyebrow">EXPLORE YOUR OPTIONS IN MEDICINE</p>
+    <h1>Compare physician pay.<br><span>Understand what you could keep.</span></h1>
+    <p>Explore physician income by specialty and location across Canada and the U.S. Compare published pay, estimate what remains after practice costs and taxes, then see how local living costs affect what you can afford.</p>
+    <div class="intro-actions"><a class="primary-link" href="#quick-controls">Compare two places <span aria-hidden="true">↓</span></a><a href="#location-explorer">Browse a specialty across locations →</a></div>
+    <p class="intro-context">For students exploring careers and physicians comparing opportunities. Published figures describe different populations and years; they do not predict your starting salary.</p>
+  </div>
+
+  <details id="income-guide" class="guide">
+    <summary>New to physician pay? Salary, billings and take-home mean different things.</summary>
+    <div class="income-definitions">
+      <article><h3>Gross billings / revenue</h3><p>Money a practice receives before paying for staff, rent and other practice costs. Canadian clinical payment benchmarks start here.</p></article>
+      <article><h3>Salary / compensation</h3><p>Pay to a physician before personal tax. The employee model assumes the employer covers practice overhead. Check which benefits a compensation figure includes.</p></article>
+      <article><h3>Personal take-home</h3><p>Money left after practice costs, taxes and the insurance or professional costs included here. Housing, food and debt payments come next.</p></article>
+      <article><h3>Purchasing power</h3><p>A modeled estimate of what take-home can buy at local prices. Its I$ units measure spending power; they are not dollars deposited in your bank account.</p></article>
+    </div>
+    <p class="hint">A median is the middle reported value. It does not mean a new graduate, a full-time attending or a physician with your workload will earn that amount.</p>
+  </details>
+
+  <section id="choose-comparison" aria-labelledby="choose-heading">
+    <div class="section-head"><div><p class="eyebrow">START HERE</p><h2 id="choose-heading">Choose your specialty and two places</h2><p class="section-description">A and B are two editable scenarios. Start with published pay, or enter an offer you want to compare.</p></div><span class="vintage">Historical data, not a forecast<br>2025 tax model · pay years shown below</span></div>
+    <div class="toolbar">
+      <div class="utilities"><button data-preset="median">Reset to published benchmarks</button><button id="swap">Swap A / B</button><button id="export">Save comparison</button><button id="print-comparison">Print / save PDF</button><label class="file-label">Load comparison<input id="import" type="file" accept=".json,application/json"></label></div>
+      <details class="examples"><summary>Try an example comparison</summary><p class="hint">Examples illustrate how the calculator works. Entered incomes are hypothetical.</p><div class="presets" aria-label="Comparison examples"><button data-preset="cross">Illustrative take-home · BC vs Oklahoma</button><button data-preset="nyok">Same US$500k salary · NYC vs Oklahoma</button><button data-preset="derm">Published dermatology payments · Alberta vs Ontario</button></div></details>
+      <span id="file-status" role="status"></span>
+    </div>
+    <div id="quick-controls" class="quick-controls" aria-label="Choose two locations and income amounts"></div>
+    <aside class="incorporation-note"><strong>Where does incorporation fit?</strong><p>The automatic model treats practice revenue as unincorporated self-employment. It does not calculate corporate tax, salary/dividend withdrawals or money retained in a corporation. For an incorporated scenario, enter independently calculated personal take-home after taxes and costs. <a href="#incorporation">How to compare incorporated income</a>.</p></aside>
+  </section>
+
+  <section id="comparison" class="comparison" aria-live="polite"></section>
+
+  <section id="location-explorer"><div class="section-head"><div><p class="eyebrow">LOOK BEYOND TWO PLACES</p><h2>Explore a specialty across locations</h2><p>Browse the available pay evidence, then load a location into A or B. A national U.S. benchmark can stay the same while local tax and living costs change.</p></div></div><div id="explorer-controls"></div><div id="explorer-table"></div></section>
+
+  <details id="expense-details" class="feature-panel"><summary><span>Adjust expenses and taxes</span><small>Overhead, insurance, income type and tax overrides for A and B</small></summary><p class="hint">Published-pay mode refreshes income when specialty or location changes. Custom mode keeps your entered amount. Review the assumptions against the practice or employment arrangement you want to compare.</p><div id="scenarios" class="scenarios"></div></details>
+
+  <details id="budget-details" class="feature-panel"><summary><span>Add a household budget, debt and work hours</span><small>Optional planning after you have compared income</small></summary>
+    <section id="life-planner"><div class="section-head"><div><h2>What your life could cost</h2><p>Build a monthly budget, repay debt, and see what remains. Amounts use each location’s currency.</p></div><span class="vintage">Editable planning assumptions<br>Housing sources shown beside inputs</span></div><div id="planner-inputs" class="scenarios"></div><div id="planner-results" aria-live="polite"></div><div id="cash-exchange"></div></section>
+    <section id="decision-lab"><h2>How sensitive is the comparison?</h2><div id="decision-results"></div></section>
+  </details>
+
+  <details id="incorporation" class="feature-panel"><summary><span>Understand incorporation</span><small>Compare personal income separately from money held in a corporation</small></summary>
+    <div class="income-definitions">
+      <article><h3>It depends on the work arrangement</h3><p>Incorporation eligibility and tax treatment depend on local professional rules and how you work. An employee salary does not become eligible business income simply because a physician creates a corporation. Canadian personal-services-business rules can change the tax treatment of employment-like arrangements.</p><p><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return/tax-implications-personal-services-business/what-psb.html" target="_blank" rel="noopener noreferrer">CRA: personal services businesses</a> · <a href="https://www.cpso.on.ca/Public/Services/Physician-Register/Glossary-of-Terms" target="_blank" rel="noopener noreferrer">CPSO: professional corporations</a></p></article>
+      <article><h3>Corporate funds and personal cash are separate</h3><p>Money retained in a corporation is not personal take-home. For a Canadian corporation, retaining eligible business profits can defer personal tax until funds are paid out. That timing benefit does not guarantee permanent tax savings. U.S. rules differ; S-corporation income generally passes through to shareholders for personal taxation.</p><p><a href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plan-folio-2-dividends/income-tax-folio-s3-f2-c2-taxable-dividends-corporations-resident-canada.html" target="_blank" rel="noopener noreferrer">CRA: corporate and dividend taxation</a> · <a href="https://www.irs.gov/businesses/small-businesses-self-employed/s-corporations" target="_blank" rel="noopener noreferrer">IRS: S corporations</a></p></article>
+    </div>
+    <div class="incorporation-example"><h3>How to use an incorporated scenario here</h3><p>Choose <strong>Enter my own income → Known personal take-home</strong>. Enter personal cash after all applicable taxes, practice costs and insurance, before household spending. Exclude funds retained in the corporation. Use the same withdrawal and household-spending assumptions when comparing places.</p><p><strong>Illustration:</strong> if you have $150,000 available personally after tax and costs, and a further $50,000 stays in the corporation, enter $150,000 in the selected currency. The retained $50,000 belongs in a separate corporate wealth analysis.</p><p class="hint">This route compares the personal take-home you supply. It does not evaluate the total financial benefit of incorporation. Fixed tax overrides do not add corporate accounting to the automatic model.</p></div>
+  </details>
+
+  <details class="feature-panel"><summary><span>Inspect the published pay data</span><small>Source populations, years, missing values and national versus local coverage</small></summary><section id="evidence"><div class="section-head"><div><h2>Specialty pay evidence</h2></div><select id="evidence-country" aria-label="Evidence country"><option value="CA">Canada · gross clinical medians</option><option value="US">U.S. · state wage medians</option><option value="AMGA">U.S. · medical-group medians</option></select></div><p id="evidence-note"></p><div class="filters"><label>Location<select id="evidence-place"></select></label><label>Specialty<input id="evidence-search" type="search" placeholder="Find a specialty"></label></div><div class="table-wrap"><table><thead id="evidence-head"></thead><tbody id="evidence-body"></tbody></table></div></section></details>
+  <details class="feature-panel"><summary><span>Read the calculation method and sources</span><small>Tax coverage, cost-of-living model and evidence dates</small></summary><section id="method"><h2>How everything is calculated</h2><div id="method-content"></div></section></details>
+  <p class="closing-note">All calculations run in your browser. Inputs stay on your device unless you export them. Physician Pay supports comparisons using published evidence and editable assumptions. It does not predict an individual salary or provide a personalized tax return. Pay, taxes and living costs are only part of choosing a specialty or place to practise.</p>
+</main>
+<script src="./data.js"></script><script src="./model-data.js"></script><script src="./layers-data.js"></script><script src="./engine.js"></script><script src="./benchmarks.js"></script><script src="./planner.js"></script><script src="./layers-ui.js"></script><script src="./app.js"></script>
+</body>
+</html>
