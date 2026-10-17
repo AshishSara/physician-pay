@@ -13,15 +13,16 @@
 <a class="skip" href="#quick-controls">Skip to income inputs</a>
 <header>
   <a href="#" class="brand">Physician Pay<span>CANADA + UNITED STATES</span></a>
-  <nav aria-label="Main"><a href="#quick-controls">Compare two places</a><a href="#location-explorer">Browse locations</a><a href="#income-guide">Understand the numbers</a><a href="#evidence">Sources</a></nav>
+  <nav aria-label="Main"><a href="#quick-controls">Compare career paths</a><a href="#student-budget">Monthly budget</a><a href="#location-explorer">Browse locations</a><a href="#income-guide">Understand the numbers</a><a href="#evidence">Sources</a></nav>
 </header>
 <main>
   <div class="intro">
     <p class="eyebrow">EXPLORE YOUR OPTIONS IN MEDICINE</p>
     <h1>Compare physician pay.<br><span>Understand what you could keep.</span></h1>
     <p>Explore physician income by specialty and location across Canada and the U.S. Compare published pay, estimate what remains after practice costs and taxes, then see how local living costs affect what you can afford.</p>
-    <div class="intro-actions"><a class="primary-link" href="#quick-controls">Compare two places <span aria-hidden="true">↓</span></a><a href="#location-explorer">Browse a specialty across locations →</a></div>
-    <p class="intro-context">For students exploring careers and physicians comparing opportunities. Published figures describe different populations and years; they do not predict your starting salary.</p>
+    <div class="intro-actions"><a class="primary-link" href="#quick-controls">Compare career paths <span aria-hidden="true">↓</span></a><a href="#location-explorer">Browse a specialty across locations →</a></div>
+    <ol class="student-steps" aria-label="Comparison steps"><li><a href="#quick-controls"><b>1</b> Choose specialty &amp; place</a></li><li><a href="#comparison"><b>2</b> Follow pay to take-home</a></li><li><a href="#student-budget"><b>3</b> Build your monthly budget</a></li></ol>
+    <p class="intro-context">For medical students exploring life after training. These are practising-physician scenarios, not residency pay or starting offers. Training duration, future pay growth and future tax changes are not modeled.</p>
   </div>
 
   <details id="income-guide" class="guide">
@@ -36,7 +37,7 @@
   </details>
 
   <section id="choose-comparison" aria-labelledby="choose-heading">
-    <div class="section-head"><div><p class="eyebrow">START HERE</p><h2 id="choose-heading">Choose your specialty and two places</h2><p class="section-description">A and B are two editable scenarios. Start with published pay, or enter an offer you want to compare.</p></div><span class="vintage">Historical data, not a forecast<br>2025 tax model · pay years shown below</span></div>
+    <div class="section-head"><div><p class="eyebrow">START HERE</p><h2 id="choose-heading">Choose two specialties and places</h2><p class="section-description">Compare the same specialty in different places, or different specialties side by side. Start with published pay, then adjust the assumptions for each path.</p></div><span class="vintage">Historical data, not a forecast<br>2025 tax model · pay years shown below</span></div>
     <div class="toolbar">
       <div class="utilities"><button data-preset="median">Reset to published benchmarks</button><button id="swap">Swap A / B</button><button id="export">Save comparison</button><button id="print-comparison">Print / save PDF</button><label class="file-label">Load comparison<input id="import" type="file" accept=".json,application/json"></label></div>
       <details class="examples"><summary>Try an example comparison</summary><p class="hint">Examples illustrate how the calculator works. Entered incomes are hypothetical.</p><div class="presets" aria-label="Comparison examples"><button data-preset="cross">Illustrative take-home · BC vs Oklahoma</button><button data-preset="nyok">Same US$500k salary · NYC vs Oklahoma</button><button data-preset="derm">Published dermatology payments · Alberta vs Ontario</button></div></details>
@@ -48,11 +49,19 @@
 
   <section id="comparison" class="comparison" aria-live="polite"></section>
 
+  <section id="student-budget" aria-labelledby="student-budget-heading">
+    <div class="section-head"><div><p class="eyebrow">PLAN YOUR LIFE AFTER TRAINING</p><h2 id="student-budget-heading">What would be left each month?</h2><p class="section-description">Take-home is only the beginning. Compare the same household needs in both places, then subtract living costs and loan payments. Every budget assumption is editable.</p></div><span class="vintage">Monthly cash · local currency<br>Historical pay and 2025 taxes</span></div>
+    <p id="student-budget-notice" class="notice neutral hidden" role="status"></p>
+    <div id="student-model"></div>
+    <div id="student-budget-inputs" class="student-budget-grid"></div>
+    <p id="student-budget-context" class="student-budget-context">Amounts in CA$ and US$ are different currencies. Purchasing power does not convert cash savings. <a href="#cash-exchange">Compare cross-border cash using an exchange rate</a>. Moving costs and home down payments are separate upfront costs; <a href="#budget-details">review the detailed plan</a>.</p>
+  </section>
+
   <section id="location-explorer"><div class="section-head"><div><p class="eyebrow">LOOK BEYOND TWO PLACES</p><h2>Explore a specialty across locations</h2><p>Browse the available pay evidence, then load a location into A or B. A national U.S. benchmark can stay the same while local tax and living costs change.</p></div></div><div id="explorer-controls"></div><div id="explorer-table"></div></section>
 
   <details id="expense-details" class="feature-panel"><summary><span>Adjust expenses and taxes</span><small>Overhead, insurance, income type and tax overrides for A and B</small></summary><p class="hint">Published-pay mode refreshes income when specialty or location changes. Custom mode keeps your entered amount. Review the assumptions against the practice or employment arrangement you want to compare.</p><div id="scenarios" class="scenarios"></div></details>
 
-  <details id="budget-details" class="feature-panel"><summary><span>Add a household budget, debt and work hours</span><small>Optional planning after you have compared income</small></summary>
+  <details id="budget-details" class="feature-panel"><summary><span>Refine housing, debt and longer-term plans</span><small>Published rent references, home ownership, work hours, moving costs and projections</small></summary>
     <section id="life-planner"><div class="section-head"><div><h2>What your life could cost</h2><p>Build a monthly budget, repay debt, and see what remains. Amounts use each location’s currency.</p></div><span class="vintage">Editable planning assumptions<br>Housing sources shown beside inputs</span></div><div id="planner-inputs" class="scenarios"></div><div id="planner-results" aria-live="polite"></div><div id="cash-exchange"></div></section>
     <section id="decision-lab"><h2>How sensitive is the comparison?</h2><div id="decision-results"></div></section>
   </details>

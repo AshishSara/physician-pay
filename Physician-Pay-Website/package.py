@@ -21,7 +21,7 @@ assert not re.search(r'<script[^>]*src=',html)
 with zipfile.ZipFile(out/'Physician-Pay-Website.zip','w',zipfile.ZIP_DEFLATED) as z:
  z.write(out/'Physician-Pay.html','index.html')
  for f in sorted((root/'dist').iterdir()):z.write(f,'dist/'+f.name)
- for f in ['tests.cjs','tests-model.cjs','tests-benchmarks.cjs','tests-planner.cjs','PHYSICIAN-PAY.md','PUBLISH.md']:
+ for f in ['tests.cjs','tests-model.cjs','tests-benchmarks.cjs','tests-planner.cjs','tests-student.cjs','PHYSICIAN-PAY.md','PUBLISH.md']:
   source=root/f
   if f=='PHYSICIAN-PAY.md' and not source.exists():source=root/'README.md'
   z.write(source,'README.md' if f=='PHYSICIAN-PAY.md' else f)
@@ -29,7 +29,7 @@ with zipfile.ZipFile(out/'Physician-Pay-Website.zip','w',zipfile.ZIP_DEFLATED) a
   z.write(root/'research'/f,'research/'+f)
  z.write(root/'package.py','package.py')
  z.writestr('.nojekyll','')
- z.writestr('VERSION.txt','Version 4 · 2026-09-09\nStatic GitHub Pages upload package; index.html is standalone.\n')
+ z.write(root/'VERSION.txt','VERSION.txt')
 # Parse the final file and verify that every bundled script is syntactically valid separately.
 for i,code in enumerate(re.findall(r'<script>(.*?)</script>',html,re.S)):
  import subprocess,tempfile

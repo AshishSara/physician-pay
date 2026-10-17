@@ -77,3 +77,34 @@ main{padding-top:48px}
 @media print{
  .intro-actions,.examples,.period-control,.row-actions{display:none!important}.takehome-grid{display:grid;grid-template-columns:1fr 1fr}.comparison{break-inside:auto}.takehome-card{break-inside:avoid}.feature-panel{border:0;padding:0}.feature-panel>summary{border-bottom:1px solid #ccc}header{padding:0 0 12px}.intro h1{font-size:30px}.intro{padding-bottom:0}
 }
+/* Student planning: one monthly cash flow, backed by the detailed plan. */
+.student-steps{display:flex;flex-wrap:wrap;gap:12px 25px;padding:0;margin:26px 0;list-style:none}
+.student-steps a{display:flex;align-items:center;gap:8px;text-decoration:none;font-size:14px;color:#294a40}
+.student-steps b{display:grid;place-items:center;border:1px solid #c8d8cf;border-radius:50%;width:26px;height:26px;font-size:12px;background:#f1f6f2}
+#student-budget{border-top:1px solid var(--line);padding-top:32px;scroll-margin-top:20px}
+.student-model{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;padding:20px 24px;border:1px solid #d6dfd8;border-radius:5px;background:#f4f8f4;margin-bottom:22px;align-items:start}
+.student-model strong{font-size:16px;color:#294a40}
+.student-model p{margin-top:8px;max-width:660px}
+.student-budget-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.student-budget-side{border:1px solid var(--line);border-top:3px solid var(--a);border-radius:5px;background:#fff;padding:24px;min-width:0}
+.student-budget-side:nth-child(2){border-top-color:var(--b)}
+.student-budget-side:nth-child(2) .letter,.student-budget-side:nth-child(2) .student-amount{color:var(--b)}
+.student-budget-side h3{font-size:19px;line-height:1.35}
+.student-budget-side h3 small{display:block;font-size:14px;font-weight:450;color:var(--muted);margin-top:4px}
+.student-budget-side .currency{font-size:10px;white-space:nowrap}
+.student-summary{background:#f6f9f7;border-radius:4px;margin:0 0 24px;padding:20px}
+.student-summary .cash-label{font-size:11px;letter-spacing:.7px;margin:0 0 9px}
+.student-amount{font-size:clamp(30px,3.1vw,43px);line-height:1.2;letter-spacing:-1px;color:var(--a);font-weight:760;font-variant-numeric:tabular-nums}
+.student-summary .ledger{margin:16px 0 12px}
+.student-summary .ledger>div{font-size:13px;gap:12px}
+.student-assumption{font-size:12px;font-weight:600;color:#456052;margin:16px 0;line-height:1.6}
+.student-source{font-size:12px;line-height:1.6;color:var(--muted);margin:14px 0 0}
+.student-stress summary{font-size:13px;padding:14px 0}
+.student-stress dd .hint{display:inline-block;white-space:normal;max-width:195px;text-align:right;margin:0}
+.student-total{margin-top:18px}
+.student-debt{margin:20px 0 16px}
+.student-detail-link,.student-budget-side>p>a{font-size:13px;font-weight:600}
+.student-budget-context{font-size:13px;color:var(--muted);line-height:1.7;margin:20px 0 0;max-width:1000px}
+.planner-side{scroll-margin-top:20px}
+@media(max-width:760px){.student-model,.student-budget-grid{grid-template-columns:1fr}.student-model{padding:18px;gap:18px}.student-budget-side{padding:18px}.student-summary{padding:16px}.student-steps{display:grid;gap:10px;margin:22px 0}.student-budget-grid{gap:20px}}
+@media print{.student-steps,.student-model,.student-budget-side>label,.student-budget-side>.grid2,.student-debt,.student-detail-link{display:none!important}.student-budget-grid{display:block}.student-budget-side{break-inside:avoid;margin-bottom:18px}.student-stress>*{display:block}}

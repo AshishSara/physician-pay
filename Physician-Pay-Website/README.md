@@ -2,6 +2,16 @@
 
 A static, browser-only physician income and purchasing-power comparison for Canada and the United States. No backend, account, tracker, paid API or server subscription is required. The research snapshot was reviewed on 9 September 2026.
 
+## Student workflow update · 17 October 2026
+
+Compare two career paths by specialty and location, follow a monthly gross-to-take-home ledger, then edit living costs and loan repayment beside the monthly cash remaining. The same inputs back both the compact student view and the detailed housing, debt and projection tools.
+
+The visible budget supports an explicitly illustrative local-price model, an entered total, or itemized housing and living costs. It keeps loan payments separate, preserves deficits, and exposes hypothetical 10% lower pay and 15% higher living costs. Lower pay recalculates eligible automatic taxes; known-net and fixed-tax cases explain why that stress calculation is unavailable. Overhead remains a percentage of revenue in the stress model, not a fixed-cost model.
+
+Source populations, dates, currency and the fixed 2025 tax baseline stay visible. Location changes explain budget resets; manually edited rent immediately loses the published-source attribution. Household-income/childcare inputs do not change filing status. These are practising-physician scenarios, not residency earnings, starting offers or future earnings forecasts. All pay, tax, price and housing datasets retain their existing historical snapshot.
+
+`PayPlanner.monthly()` shares the established cash-flow calculation with the detailed planner but does not require optional work-hour or investment-projection inputs. `tests-student.cjs` covers that separation, missing budgets, negative surplus, loan caps, missing tax data and stress-test guards. The four original calculation suites remain in place.
+
 ## Clarity update · 12 September 2026
 
 The page now explains the salary-comparison purpose before the calculator. It leads with starting income, deductions and estimated personal take-home, followed by optional spending-power calculations. The location explorer explains national versus local pay coverage. Household budgets, debt, projections, detailed assumptions and source tables sit in expandable sections; navigation links reveal the relevant section automatically.
@@ -81,7 +91,7 @@ The embedded data preserve 190 Canadian province/specialty cells, 867 U.S. state
 
 Open `dist/index.html` directly, or serve `dist/` with any static host. No build step or package installation is needed. The separate `Physician-Pay.html` delivery embeds all assets for offline use.
 
-Run `node tests.cjs`, `node tests-model.cjs` , `node tests-benchmarks.cjs` and `node tests-planner.cjs` from the project root. These cover reference tax cases, accounting identities, all geographic price options, cross-border currency consistency, direct-net behavior, expense treatment, overrides, CMPA examples and invalid inputs. Added tests check eight new state models, tax thresholds, loan and mortgage payments, debt-payoff cash release, projections, break-even solving and housing coverage. Static JavaScript/asset checks also pass. Browser/visual QA was not performed for the original version 4 package; see the clarity-update checks above.
+Run `node tests.cjs`, `node tests-model.cjs` , `node tests-benchmarks.cjs` , `node tests-planner.cjs` and `node tests-student.cjs` from the project root. These cover reference tax cases, accounting identities, all geographic price options, cross-border currency consistency, direct-net behavior, expense treatment, overrides, CMPA examples and invalid inputs. Added tests check eight new state models, tax thresholds, loan and mortgage payments, debt-payoff cash release, projections, break-even solving and housing coverage. Static JavaScript/asset checks also pass. Browser/visual QA was not performed for the original version 4 package; see the clarity-update checks above.
 
 `research/anchors.json` includes the reproducible calibration inputs, published fee groups and their source links. `python research/build-model.py` recreates `dist/model-data.js`. The embedded `dist/data.js` is the complete frozen pay/tax/price snapshot; the original salary-data extraction pipeline is not required to run or publish the site.
 
